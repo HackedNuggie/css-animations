@@ -27,6 +27,7 @@ body{
 
 .container img:nth-child(2){
     left: 40%;
+    animation: vrtenje 5s linear infinite;
 }
 .container img:nth-child(3){
     left: 60%;
@@ -59,4 +60,13 @@ body{
     opacity: 1;
     left: 10%;
     
+}
+
+@keyframes vrtenje{
+    from{
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
 }
