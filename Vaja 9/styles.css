@@ -24,27 +24,28 @@ body{
     filter: drop-shadow(5px 5px 10px rgba(0,0,0,.5));
 
 }
-.container: img:nth-child(1){
-    left: 50%;
-}
+
 .container img:nth-child(2){
-    left: 60%;
+    left: 40%;
 }
 .container img:nth-child(3){
     left: 60%;
 }
-.container:hover img:nth-child(1){
-    left: 50%;
-}
+
+
 .container:hover img:nth-child(2){
     left: 65%;
+    filter: brightness(0) saturate(0) invert(0);
+    
 }
 .container:hover img:nth-child(3){
     left: 80%;
+    
 }
 
 .container:hover img{
     height: 400px;
+    left: 40%;
 }
 .container .content{
     position: relative;
