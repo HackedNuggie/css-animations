@@ -1,0 +1,43 @@
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    align-items: center;
+    font-family: 'Montserrat', sans-serif;
+}
+.container{
+    position: relative;
+    width: 500px;
+    height: 300px;
+    display: flex;
+    
+    align-items: center;
+    background: linear-gradient(45deg, rgb(255, 2, 2), rgb(52, 181, 250));
+    border-radius: 20px;
+}
+.container img{
+    height: 300px;
+    position: absolute;
+    left: 50%;
+    transition: all 0.3s;
+    bottom: 0;
+
+}
+.container:hover img{
+    height: 400px;
+    left: 80%;
+}
+.container .content{
+    position: relative;
+    width: 50%;
+    left: 30%;
+    color: white;
+    opacity: 0;
+    transition: all 0.3s;
+}
+.container:hover .content{
+    opacity: 1;
+    left: 10%;
+    
+}
