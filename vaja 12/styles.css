@@ -1,0 +1,32 @@
+body {
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    align-items: center;
+    background-color: aquamarine;
+}
+
+h1 {
+    color: blue;
+    font-size: 70px;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    text-shadow: 5px 20px 5px rgba(0,0,0,.3);
+    letter-spacing: 10px;
+
+    
+}
+span::before {
+    content: 'Španija';
+    color: red;
+    animation: imena 5s infinite;
+
+}
+
+@keyframes imena {
+    0% { content:'Brazilija';}
+    30% { content: 'Španija';}
+    60% { content: 'Italija';}
+    80% { content: 'Švica';}
+    100% { content: "Severna Koreja";}
+}
