@@ -1,29 +1,24 @@
 body {
-
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    align-items: center;
+    background-color: aquamarine;
 }
 
-div {
-    width: 100px;
-    height: 100px;
-    background-color: red;
-    animation-name: gibanje;
-    animation-duration: 4s;
-    animation-iteration-count: infinite;
+h1 {
+    color: blue;
+    font-size: 70px;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    text-shadow: 5pxs 20px 5px rgba(0,0,0,.3);
+    letter-spacing: 10px;
+
+    animation: gibanje 5s infinite;
+    animation-direction: alternate;
 }
 
 @keyframes gibanje {
-    /*
-    from {
-        transform: translateX(0);
-    }
-    to {
-        transform: translateX(800px);
-    }
-    */
-    0% { transform: translate(0px, 0px) rotate(0deg); background-color: blue;}
-    25% { transform: translate(800px, 0px) rotate(360deg); background-color: rgb(255,0,179);}
-    50% { transform: translate(800px, 400px) rotate(60deg); background-color: rgb(0,247,255);}
-    75% { transform: translate(0px, 400px) rotate(90deg); background-color: rgb(30, 255, 0);}
-
-
+    from { transform: rotate(10deg); }
+    to { transform: rotate(-10deg); }
 }
