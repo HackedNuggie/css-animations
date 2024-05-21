@@ -1,0 +1,33 @@
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #84ffff;
+
+}
+h1{
+    color: transparent;
+    font-size: 90px;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+
+    letter-spacing: 10px;
+    animation: gibanje 2s ease-in-out infinite alternate;
+    text-transform: uppercase;
+    background-image: url("water.jpg");
+    -webkit-background-clip: text;
+
+}
+
+
+@keyframes gibanje{
+    0%{
+        transform: rotate(20deg);    
+     }
+
+    100%{
+            transform: rotate(-20deg);
+    }
+
+}
