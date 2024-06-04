@@ -1,0 +1,75 @@
+body {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.container {
+    position: relative;
+    width: 600px;
+    height:300px;
+}
+.background{
+    position: absolute;
+    bottom: 0;
+    height: 100%;
+    width: 100%;
+    background: url(image.jpg);
+    background-position: bottom left;
+    background-repeat: no-repeat;
+    animation: ozadje 30s linear infinite;
+    transition: all 0.4s ;
+    overflow: hidden;
+    
+}
+/*
+.background::after {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    content: "";
+    background-color: rgb(148, 234, 255);
+    transform:translateY(100%);
+    transition: all .4s;
+}
+.background:hover::after{
+    
+    transform:translateY(0);
+}
+*/
+.kolesar {
+    position:absolute;
+    bottom:0;
+    left:35%;
+    width:200px;
+    height:200px;
+    background-image: url(kolesar_B.gif);
+    background-size: cover;
+    z-index: 50;
+}
+.kolesar {
+    position:absolute;
+    bottom:0;
+    left:35%;
+    width:200px;
+    height:200px;
+    background-image: url(kolesar_B.gif);
+    background-size: cover;
+    z-index: 50;
+}
+.kolesar::before {
+    content:"";
+    position: absolute;
+    background-image: url("koloL.gif");
+    background-size: cover;
+    bottom:0;
+    height: 25%;
+    width: 25%;
+    z-index: 5;
+}
+
+@keyframes ozadje{
+    from { background-position: bottom left;}
+    to { background-position: bottom right;}
+}
+
